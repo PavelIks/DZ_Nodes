@@ -1,4 +1,4 @@
-package com.example.mynodes.ClassJava;
+package com.example.mynodes.Java;
 
 public class NotesClass
 {

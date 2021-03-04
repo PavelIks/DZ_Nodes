@@ -1,4 +1,4 @@
-package com.example.mynodes.ClassJava;
+package com.example.mynodes.Java;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import java.io.IOException;
@@ -23,7 +23,6 @@ public class NotesXML
         NotesClass currentNotesClass = null;
         boolean inEntity = false;
         String textValue = "";
-
         try
         {
             int eventType = xpp.getEventType();

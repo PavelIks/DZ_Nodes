@@ -1,4 +1,4 @@
-package com.example.mynodes.CostomDialog;
+package com.example.mynodes.Dialog;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.os.Bundle;
@@ -14,6 +14,6 @@ public class CustomDialogFragment extends DialogFragment
     {
         Date currentTime = Calendar.getInstance().getTime();
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        return builder.setTitle(String.valueOf(currentTime)).setTitle("Выберете точную дату со временем!").setMessage(String.valueOf(currentTime)).setPositiveButton("OK", null).setNegativeButton("Cancel", null).create();
+        return builder.setTitle(String.valueOf(currentTime)).setTitle("Поставте дату и время!").setMessage(String.valueOf(currentTime)).setPositiveButton("Клик!", null).setNegativeButton("Отмена!", null).create();
     }
 }
