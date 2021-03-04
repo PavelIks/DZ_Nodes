@@ -19,7 +19,7 @@ public class LayoutMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_main);
-        ListView v = (ListView)findViewById(R.id.nodeitems);
+        ListView v = (ListView)findViewById(R.id.ListView_Nodeitems_ID);
 
         XmlPullParser xpp = getResources().getXml(R.xml.notes);
         NotesXML parser = new NotesXML();

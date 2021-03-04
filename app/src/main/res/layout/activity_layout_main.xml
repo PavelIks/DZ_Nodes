@@ -23,7 +23,7 @@
                 android:orientation="vertical">
 
                 <ListView
-                    android:id="@+id/nodeitems"
+                    android:id="@+id/ListView_Nodeitems_ID"
                     android:layout_width="match_parent"
                     android:layout_height="518dp" />
             </LinearLayout>
@@ -39,7 +39,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/Add_btn"
+                android:id="@+id/Button_Add_ID"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="+" />

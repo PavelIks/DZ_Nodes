@@ -15,7 +15,7 @@ public class SQlLightNode extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_s_ql_light_node);
+        setContentView(R.layout.activity_sql);
 
     }
     public void onClick(View v){
