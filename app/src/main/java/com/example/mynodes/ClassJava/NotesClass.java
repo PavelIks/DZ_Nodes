@@ -1,6 +1,6 @@
 package com.example.mynodes.ClassJava;
 
-public class Node
+public class NotesClass
 {
     private String title;
     private String body;

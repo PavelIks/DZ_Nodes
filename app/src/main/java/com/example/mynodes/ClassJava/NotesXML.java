@@ -4,23 +4,23 @@ import org.xmlpull.v1.XmlPullParserException;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class NodeResourceParser
+public class NotesXML
 {
-    private ArrayList<Node> nodes;
-    public NodeResourceParser()
+    private ArrayList<NotesClass> notes;
+    public NotesXML()
     {
-        nodes = new ArrayList<>();
+        notes = new ArrayList<>();
     }
 
-    public ArrayList<Node> getNodes()
+    public ArrayList<NotesClass> getNotes()
     {
-        return nodes;
+        return notes;
     }
 
     public boolean parse(XmlPullParser xpp)
     {
         boolean status = true;
-        Node currentNode = null;
+        NotesClass currentNotesClass = null;
         boolean inEntity = false;
         String textValue = "";
 
@@ -37,7 +37,7 @@ public class NodeResourceParser
                             if("node".equalsIgnoreCase(tagName))
                             {
                                 inEntity = true;
-                                currentNode = new Node();
+                                currentNotesClass = new NotesClass();
                             }
                             break;
                         }
@@ -53,15 +53,15 @@ public class NodeResourceParser
                                 if ("node".equalsIgnoreCase(tagName))
                                 {
                                     inEntity = false;
-                                    nodes.add(currentNode);
+                                    notes.add(currentNotesClass);
                                 }
                                 else if ("title".equalsIgnoreCase(tagName))
                                 {
-                                    currentNode.setTitle(textValue);
+                                    currentNotesClass.setTitle(textValue);
                                 }
                                 else if ("body".equalsIgnoreCase(tagName))
                                 {
-                                    currentNode.setBody(textValue);
+                                    currentNotesClass.setBody(textValue);
                                 }
                             }
                             break;

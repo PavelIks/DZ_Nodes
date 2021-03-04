@@ -7,8 +7,8 @@ import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.example.mynodes.ClassJava.Node;
-import com.example.mynodes.ClassJava.NodeResourceParser;
+import com.example.mynodes.ClassJava.NotesClass;
+import com.example.mynodes.ClassJava.NotesXML;
 import com.example.mynodes.R;
 
 import org.xmlpull.v1.XmlPullParser;
@@ -21,14 +21,14 @@ public class LayoutMainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_layout_main);
         ListView v = (ListView)findViewById(R.id.nodeitems);
 
-        XmlPullParser xpp = getResources().getXml(R.xml.nodes);
-        NodeResourceParser parser = new NodeResourceParser();
+        XmlPullParser xpp = getResources().getXml(R.xml.notes);
+        NotesXML parser = new NotesXML();
         if(parser.parse(xpp)){
-            for(Node node : parser.getNodes()) {
-                Log.d("XML", node.toString());
+            for(NotesClass notesClass : parser.getNotes()) {
+                Log.d("XML", notesClass.toString());
             }
 
-            ArrayAdapter<Node> adapter = new ArrayAdapter<>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, parser.getNodes());
+            ArrayAdapter<NotesClass> adapter = new ArrayAdapter<>(getApplicationContext(), R.layout.support_simple_spinner_dropdown_item, parser.getNotes());
             v.setAdapter(adapter);
         }
     }
