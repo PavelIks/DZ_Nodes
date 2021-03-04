@@ -25,7 +25,7 @@ public class SQlLightNode extends AppCompatActivity {
         db.execSQL("INSERT INTO users VALUES('Met', 20)");
 
         Cursor cursor = db.rawQuery("SELECT * FROM users", null);
-        TextView textView = (TextView)findViewById(R.id.SQL_textView);
+        TextView textView = (TextView)findViewById(R.id.TextView_SQL_ID);
         while (cursor.moveToNext()){
             textView.append("\nName\t"+ cursor.getString(0) + " Age\t" + cursor.getInt(1));
         }

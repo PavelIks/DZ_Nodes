@@ -17,7 +17,7 @@
             android:orientation="horizontal">
 
             <EditText
-                android:id="@+id/Title_text"
+                android:id="@+id/EditText_Title_ID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -26,7 +26,7 @@
                 android:text="Title" />
 
             <Button
-                android:id="@+id/Date_btn"
+                android:id="@+id/Button_Date_ID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -41,7 +41,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/input_text"
+                android:id="@+id/EditText_Result_ID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -56,7 +56,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/SQL_btn"
+                android:id="@+id/Button_SQL_ID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
