@@ -64,7 +64,7 @@
                 android:text="SQL" />
 
             <Button
-                android:id="@+id/Cancel_btn"
+                android:id="@+id/Button_Exit_ID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -72,14 +72,14 @@
                 android:text="Cancel" />
 
             <Button
-                android:id="@+id/Clear_btn"
+                android:id="@+id/Button_Clear_ID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Clear" />
 
             <Button
-                android:id="@+id/Save_btn"
+                android:id="@+id/Save_Clear_ID"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
